@@ -1,6 +1,7 @@
 import { Stack, StackProps } from "aws-cdk-lib";
 import { LambdaIntegration } from "aws-cdk-lib/aws-apigateway";
 import { ITable } from "aws-cdk-lib/aws-dynamodb";
+import { Effect, PolicyStatement } from "aws-cdk-lib/aws-iam";
 import { Runtime } from "aws-cdk-lib/aws-lambda";
 // Note: This is specific to Node.js
 // And it needs esbuild to be installed
@@ -26,6 +27,15 @@ export class LambdaStack extends Stack {
         TABLE_NAME: props.propertiesTable.tableName,
       },
     });
+
+    // ZT-NOTE: This is the IAM policy that allows the Lambda to access S3
+    helloLambda.addToRolePolicy(
+      new PolicyStatement({
+        effect: Effect.ALLOW,
+        actions: ["s3:ListAllMyBuckets", "s3:ListBucket"],
+        resources: ["*"],
+      })
+    );
 
     this.helloLambdaIntegration = new LambdaIntegration(helloLambda);
   }
