@@ -20,7 +20,7 @@ export class LambdaStack extends Stack {
     super(scope, id, props);
 
     const helloLambda = new NodejsFunction(this, "testLambda", {
-      runtime: Runtime.NODEJS_18_X,
+      runtime: Runtime.NODEJS_16_X,
       handler: "handler",
       entry: join(__dirname, "..", "..", "services", "hello.ts"),
       environment: {
