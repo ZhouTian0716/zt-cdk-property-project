@@ -14,29 +14,21 @@ interface LambdaStackProps extends StackProps {
 }
 
 export class LambdaStack extends Stack {
-  public readonly helloLambdaIntegration: LambdaIntegration;
+  public readonly propertiesLambdaIntegration: LambdaIntegration;
 
   constructor(scope: Construct, id: string, props: LambdaStackProps) {
     super(scope, id, props);
 
-    const helloLambda = new NodejsFunction(this, "testLambda", {
+    const propertiesLambda = new NodejsFunction(this, "PropertiesLambda", {
       runtime: Runtime.NODEJS_16_X,
       handler: "handler",
-      entry: join(__dirname, "..", "..", "services", "hello.ts"),
+      entry: join(__dirname, "..", "..", "services", "properties", "handler.ts"),
       environment: {
         TABLE_NAME: props.propertiesTable.tableName,
       },
     });
 
-    // ZT-NOTE: This is the IAM policy that allows the Lambda to access S3
-    helloLambda.addToRolePolicy(
-      new PolicyStatement({
-        effect: Effect.ALLOW,
-        actions: ["s3:ListAllMyBuckets", "s3:ListBucket"],
-        resources: ["*"],
-      })
-    );
 
-    this.helloLambdaIntegration = new LambdaIntegration(helloLambda);
+    this.propertiesLambdaIntegration = new LambdaIntegration(propertiesLambda);
   }
 }

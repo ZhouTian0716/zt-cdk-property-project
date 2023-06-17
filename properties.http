@@ -1,2 +1,5 @@
-GET https://fal1tmjmof.execute-api.ap-southeast-2.amazonaws.com/prod/properties
+GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
+###
+
+POST https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
 ###
