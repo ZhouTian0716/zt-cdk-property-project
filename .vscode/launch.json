@@ -11,7 +11,8 @@
       "runtimeArgs": ["-r", "ts-node/register"],
       "args": ["${relativeFile}"],
       "env": {
-        "AWS_REGION": "ap-southeast-2"
+        "AWS_REGION": "ap-southeast-2",
+        "TABLE_NAME":"PropertiesTable-02c779044ee4"
       },
       "runtimeExecutable": "/Users/zhoutian/.nvm/versions/node/v16.19.1/bin/node"
     }
