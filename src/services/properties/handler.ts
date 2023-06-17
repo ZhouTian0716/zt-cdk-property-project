@@ -11,10 +11,10 @@ async function handler(event: APIGatewayProxyEvent, context: Context): Promise<A
   try {
     switch (event.httpMethod) {
       case "GET":
-        const getResponse = getProperties(event, ddbClient);
+        const getResponse = await getProperties(event, ddbClient);
         return getResponse;
       case "POST":
-        const postResponse = postProperties(event, ddbClient);
+        const postResponse = await postProperties(event, ddbClient);
         return postResponse;
       default:
         break;
