@@ -28,6 +28,12 @@ export class LambdaStack extends Stack {
       },
     });
 
+    // Allow the lambda to read and write to the table
+    propertiesLambda.addToRolePolicy(new PolicyStatement({
+      effect: Effect.ALLOW,
+      resources: [props.propertiesTable.tableArn],
+      actions: ["dynamodb:PutItem", "dynamodb:GetItem"],
+    }));
 
     this.propertiesLambdaIntegration = new LambdaIntegration(propertiesLambda);
   }
