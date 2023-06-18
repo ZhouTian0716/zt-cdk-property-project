@@ -6,12 +6,15 @@ Authorization: {{token}}
 ###
 
 GET {{url}}?id=4b305fd7-a434-47de-84dd-ea5fbe9c8341
+Authorization: {{token}}
 ###
 
 DELETE {{url}}?id=811d67b2-6871-436b-8d6e-323c81642238
+Authorization: {{token}}
 ###
 
 POST {{url}}/properties
+Authorization: {{token}}
 Content-Type:application/json
 
 {
@@ -21,6 +24,7 @@ Content-Type:application/json
 ###
 
 PUT {{url}}?id=75090c83-8d1a-41b2-89b1-298f7462676c
+Authorization: {{token}}
 Content-Type:application/json
 
 {
