@@ -1,25 +1,26 @@
 GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
 ###
 
-GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=555
+GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=4b305fd7-a434-47de-84dd-ea5fbe9c8341
 ###
 
-DELETE https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=555
+DELETE https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=d1bb2cc1-e03e-49c6-aedb-be089319bd5f
 ###
 
 POST https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
 Content-Type:application/json
 
 {
-    "address": "123 Fake Street"
+    "address": "bbb",
+    "description": "my description testing"
 }
 ###
 
-PUT https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=555
+PUT https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=4c4bfb8b-87ef-4f5d-9598-4066a9021adf
 Content-Type:application/json
 
 {
-    "address": "updated address"
+   "description": "holly shit yeer"
 }
 ###
 

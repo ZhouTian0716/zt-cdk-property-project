@@ -16,6 +16,7 @@ export async function getProperties(event: APIGatewayProxyEvent, ddbClient: Dyna
       );
       if (getItemResponse.Item) {
         const unmashalledItem = unmarshall(getItemResponse.Item);
+        console.log(unmashalledItem);
         return {
           statusCode: 200,
           body: JSON.stringify(unmashalledItem),

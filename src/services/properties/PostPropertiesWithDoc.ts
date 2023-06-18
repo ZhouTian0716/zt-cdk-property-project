@@ -19,6 +19,6 @@ export async function postPropertiesWithDoc(event: APIGatewayProxyEvent, ddbClie
 
   return {
     statusCode: 200,
-    body: JSON.stringify(result),
+    body: JSON.stringify(randomId),
   };
 }
