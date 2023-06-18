@@ -1,6 +1,12 @@
 GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
 ###
 
+GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=555
+###
+
+DELETE https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=555
+###
+
 POST https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
 Content-Type:application/json
 
@@ -9,5 +15,11 @@ Content-Type:application/json
 }
 ###
 
-GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=555
+PUT https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=555
+Content-Type:application/json
+
+{
+    "address": "updated address"
+}
 ###
+

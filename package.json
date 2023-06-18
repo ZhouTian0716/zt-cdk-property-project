@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test-launcher":"ts-node test/launcher.ts"
+    "test-launcher": "ts-node test/launcher.ts"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,8 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.354.0",
     "@aws-sdk/client-s3": "^3.354.0",
+    "@aws-sdk/lib-dynamodb": "^3.354.0",
+    "@aws-sdk/util-dynamodb": "^3.354.0",
     "@types/uuid": "^9.0.2",
     "uuid": "^9.0.0"
   }
