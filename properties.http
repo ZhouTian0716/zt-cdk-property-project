@@ -4,23 +4,23 @@ GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
 GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=4b305fd7-a434-47de-84dd-ea5fbe9c8341
 ###
 
-DELETE https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=d1bb2cc1-e03e-49c6-aedb-be089319bd5f
+DELETE https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=811d67b2-6871-436b-8d6e-323c81642238
 ###
 
 POST https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
 Content-Type:application/json
 
 {
-    "address": "bbb",
+    "address": "zzz",
     "description": "my description testing"
 }
 ###
 
-PUT https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=4c4bfb8b-87ef-4f5d-9598-4066a9021adf
+PUT https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=75090c83-8d1a-41b2-89b1-298f7462676c
 Content-Type:application/json
 
 {
-   "description": "holly shit yeer"
+   "description": "holly st yeer"
 }
 ###
 

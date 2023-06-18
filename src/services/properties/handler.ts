@@ -5,7 +5,7 @@ import { getProperties } from "./GetProperties";
 import { postPropertiesWithDoc } from "./PostPropertiesWithDoc";
 import { updateProperty } from "./UpdateProperty";
 import { deleteProperty } from "./DeleteProperty";
-import { MissingFieldError } from "../shared/Validator";
+import { JsonError, MissingFieldError } from "../shared/Validator";
 
 const ddbClient = new DynamoDBClient({});
 
@@ -16,7 +16,7 @@ async function handler(event: APIGatewayProxyEvent, context: Context): Promise<A
     switch (event.httpMethod) {
       case "GET":
         const getResponse = await getProperties(event, ddbClient);
-        console.log("checking res",getResponse);
+        console.log("checking res", getResponse);
         return getResponse;
       case "POST":
         const postResponse = await postProperties(event, ddbClient);
@@ -31,11 +31,16 @@ async function handler(event: APIGatewayProxyEvent, context: Context): Promise<A
         break;
     }
   } catch (error) {
-    console.log(error);
-    if(error instanceof MissingFieldError){
+    if (error instanceof MissingFieldError) {
       return {
         statusCode: 400,
-        body: JSON.stringify(error),
+        body: error.message,
+      };
+    }
+    if (error instanceof JsonError) {
+      return {
+        statusCode: 400,
+        body: error.message,
       };
     }
     return {
