@@ -1,13 +1,17 @@
-GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
+@url = https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod
+@token = eyJraWQiOiJTdE1mTmM3MWc1ekZjV0p2dkRMYkFiTHBnNWNDdEM3b0hSZWxtakJkK1lVPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI2OWRlNzQ3OC0zMDMxLTcwZTYtM2M5NC04MzM5OTQ2NGY5ZTMiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfZUdPeklYTWxVIiwiY29nbml0bzp1c2VybmFtZSI6InRlc3QxIiwib3JpZ2luX2p0aSI6IjNmYTg2YmMzLWY0MDItNDUzNS1iNmI2LTYxYWFlNzdiMGViYiIsImF1ZCI6IjJ0cnZwdWQwNzFidXA5bTZkYWZmcTczaXFsIiwiZXZlbnRfaWQiOiIyZDUzMWU2Mi1mNWQwLTRjOTctOWZmMS1iMTAxMGJhZjk1YWIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY4NzA5NzA0OSwiZXhwIjoxNjg3MTAwNjQ5LCJpYXQiOjE2ODcwOTcwNDksImp0aSI6ImE3NjBiYzMwLTg0ZjgtNDdhMi04MDZlLTk1N2VlNDhjZjA3OSIsImVtYWlsIjoidGVzdDFAZ21haWwuY29tIn0.ptg0j4ETgPp7cHs0kuGuSsqjeoLjzYxRC9PCBB_aaiIfF26fmLNXaaEk-7D0cLPSl6aWOZchEedS5Zw8ybXsqRcbgGVDc75Rd6QQqrpgRaKYw9PgaQ72epvT_mzfn8owdPvUtJNOd16uUDdJkBb6WUjcx2oP4DCropTsI0D_dilA_qD5ZOBULupggGZ8ACejPjhFQP7WhsPk3mS0niy2Yq9vR5kng-MygV8CNCzN11yYj-k3TrxMrE3Zrt4_0feq7Uz359m-gpRvGUBL5-XtUxuJ7UTNqAbGNW_T2FXSu5tYCSaet2kryF9Vp0sMTfHofPHtCv_8XIi8ZCbfLClrxQ
+
+GET {{url}}/properties
+Authorization: {{token}}
 ###
 
-GET https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=4b305fd7-a434-47de-84dd-ea5fbe9c8341
+GET {{url}}?id=4b305fd7-a434-47de-84dd-ea5fbe9c8341
 ###
 
-DELETE https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=811d67b2-6871-436b-8d6e-323c81642238
+DELETE {{url}}?id=811d67b2-6871-436b-8d6e-323c81642238
 ###
 
-POST https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties
+POST {{url}}/properties
 Content-Type:application/json
 
 {
@@ -16,7 +20,7 @@ Content-Type:application/json
 }
 ###
 
-PUT https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/properties?id=75090c83-8d1a-41b2-89b1-298f7462676c
+PUT {{url}}?id=75090c83-8d1a-41b2-89b1-298f7462676c
 Content-Type:application/json
 
 {
