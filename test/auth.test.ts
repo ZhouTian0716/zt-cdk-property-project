@@ -8,11 +8,11 @@ async function testAuth(){
         'admin1',
         'Ateam12345)'
     )
-    console.log(loginResult.getSignInUserSession().getIdToken().getJwtToken());
-    //const credentials = await service.generateTemporaryCredentials(loginResult);
-    //console.log(credentials);
-    //const buckets = await listBuckets(credentials);
-    //console.log(buckets);
+    console.log("LOGIN-ACCESS-TOKEN", loginResult.getSignInUserSession().getIdToken().getJwtToken());
+    const credentials = await service.generateTemporaryCredentials(loginResult);
+    console.log("credentails",credentials);
+    const buckets = await listBuckets(credentials);
+    console.log("BUCKETS FETCHED USING ASSIGN ROLES",buckets);
 }
 
 async function listBuckets(credentials: any){
