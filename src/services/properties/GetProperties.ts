@@ -38,8 +38,9 @@ export async function getProperties(event: APIGatewayProxyEvent, ddbDocClient: D
       TableName: process.env.TABLE_NAME,
     })
   );
+  const Items = result.Items;
   return {
     statusCode: 200,
-    body: JSON.stringify(result),
+    body: JSON.stringify(Items),
   };
 }

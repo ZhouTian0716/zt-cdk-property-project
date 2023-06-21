@@ -1,7 +1,5 @@
 [
   {
-    "id": "aaa",
-    "createdAt": "2022-10-26T04:59:23.945Z",
     "address": "513A/116 Bowden Street, Meadowbank, NSW 2114",
     "state": "NSW",
     "description": "Ideally positioned to the fifth floor, this executive style apartment presents like new and offers an array of lifestyle amenities at your doorstep including multiple public transport options, local shops and cafes. Located in the Kingston Quarter, you'll enjoy beautifully landscaped communal areas with access to a resort style lap & plunge pool. With riverside pathways at the end of the street, this highly sought-after Meadowbank location will be the envy of all your friends and family.",
@@ -65,8 +63,6 @@
     ]
   },
   {
-    "id": "bbb",
-    "createdAt": "2022-10-30T04:59:23.945Z",
     "address": "9-11 Foster Street, Norwood, SA 5067",
     "state": "SA",
     "description": "Comprising 8 spacious bedrooms (two with ensuites), 5 modern bathrooms, 3 living areas, an enormous car enthusiasts' garage for 8 vehicles with kitchenette, this stately residence is laden with irreplaceable character including polished Baltic pine floorboards, detailed plaster cornicing, architraves, ceiling roses, extra high skirting boards and elegant stonemasonry throughout.",
@@ -149,8 +145,6 @@
     ]
   },
   {
-    "id": "ccc",
-    "createdAt": "2022-11-11T04:59:23.945Z",
     "address": "2/38 Station Street, Burwood, VIC 3125",
     "state": "VIC",
     "description": "Finished with superior quality and contemporary class, this executive home offers low maintenance luxury over 3 stunning levels. Sitting proudly in an exclusive boutique development, the stylish residence delivers bright north-facing interiors, beautifully appointed to encapsulate the best in modern minimalism. The main level is dedicated to spacious open-plan living/dining underscored by gleaming timber floors, designer kitchen flaunting stone surfaces, stainless steel appliances and island bench and concluding outdoors to a private entertainer's terrace. Accommodation is delivered through 3 generous bedrooms (main with luxe ensuite), sleek fully-tiled bathroom and home office - privately zoned ideal to work from home.",
@@ -204,6 +198,298 @@
       },
       {
         "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p3/10.jpg",
+        "isCover": false
+      }
+    ]
+  },
+  {
+    "address": "67/540 Queen Street, Brisbane City, QLD 4000",
+    "state": "QLD",
+    "description": "Positioned high on the 56th level this 2 bedroom contemporary apartment offers the very best of inner city living. With 2 spacious bedrooms and an open plan living/kitchen area, this property is perfect for an owner-occupier looking to get their foot in the door in the ever expanding Brisbane CBD or a savvy investor looking to add to their investment portfolio.",
+    "type": "Apartment",
+    "bed": 3,
+    "bath": 2,
+    "carpark": 1,
+    "area": 133,
+    "price": 800000,
+    "coordinates": {
+      "lat": -27.4633649,
+      "lng": 153.0310342
+    },
+    "placeId": "EjI2Ny81NDAgUXVlZW4gU3QsIEJyaXNiYW5lIENpdHkgUUxEIDQwMDAsIEF1c3RyYWxpYSI5GjcKMRIvChQKEgmFPFBp9lmRaxEMarWhpjIGRhCcBCoUChIJzWe_KR1akWsRkGkYRdMBT10SAjY3",
+    "images": [
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/1.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/2.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/3.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/4.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/5.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/6.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/7.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/8.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/9.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p4/10.jpg",
+        "isCover": false
+      }
+    ]
+  },
+  {
+    "address": "25 Garfield Drive, Paddington, QLD 4064",
+    "state": "QLD",
+    "description": "Located on a sprawling 1373sqm block is this luxuriously spacious, stunning single-level, four-bedroom family home. The heart of the home is dedicated to living with an expansive open plan living and dining with effortless indoor/outdoor flow to a grand outdoor room complete with inbuilt BBQ and sparkling plunge pool. With beautiful herringbone timber floors throughout the main living and walkway areas and a stylish kitchen featuring a beautiful breakfast bar island, bifold windows overlooking the BBQ area, and a substantial walk-in pantry.",
+    "type": "House",
+    "bed": 4,
+    "bath": 3,
+    "carpark": 2,
+    "area": 569,
+    "price": 2390000,
+    "coordinates": {
+      "lat": -27.4593334,
+      "lng": 152.9897431
+    },
+    "placeId": "ChIJA9eYYMpQkWsR7SJnL8RHa_c",
+    "images": [
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/1.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/2.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/3.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/4.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/5.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/6.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/7.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/8.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/9.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p5/10.jpg",
+        "isCover": false
+      }
+    ]
+  },
+  {
+    "address": "1102/265 Exhibition Street, Melbourne, VIC 3000",
+    "state": "VIC",
+    "description": "You won't go wrong choosing this luxury apartment within the most sought-after residential complex Gardens Riverside at West End. It has become the ultimate in West End living offering superb lifestyle-oriented living and beautifully centred on a private green heart, Gardens Riverside has been meticulously master-planned. This location offers buyers a highly-convenient lifestyle with Montague Markets, bars, eateries, gyms, public transport and more in close proximity all while being only 3km from the CBD.",
+    "type": "Apartment",
+    "bed": 3,
+    "bath": 2,
+    "carpark": 1,
+    "area": 150,
+    "price": 770000,
+    "coordinates": {
+      "lat": -37.8097674,
+      "lng": 144.9691703
+    },
+    "placeId": "EjUxMTAyLzI2NSBFeGhpYml0aW9uIFN0LCBNZWxib3VybmUgVklDIDMwMDAsIEF1c3RyYWxpYSI7GjkKMRIvChQKEgmtHkrWzkLWahFcf3gCXJQcWxCJAioUChIJaYi36chC1moR7tMRSjPDwP0SBDExMDI",
+    "images": [
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/1.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/2.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/3.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/4.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/5.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/6.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/7.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/8.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/9.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p6/10.jpg",
+        "isCover": false
+      }
+    ]
+  },
+  {
+    "id": "06323c23-3259-4228-8cd0-c3f6ec070ca7",
+    "createdAt": "2020-10-13T04:59:23.945Z",
+    "address": "1311/104 North Terrace, Adelaide, SA 5000",
+    "state": "SA",
+    "description": "Move straight in and enjoy all the advantages of no maintenance living in this fantastic location or reap the rewards of the viable rental returns on offer through a choice of reputable management companies. Currently leased to the Oaks Hotels and Resorts for a guaranteed rental return of $2,430.83 per month.",
+    "type": "Apartment",
+    "bed": 2,
+    "bath": 1,
+    "carpark": 1,
+    "area": 72,
+    "price": 385000,
+    "coordinates": {
+      "lat": -34.921575,
+      "lng": 138.6002349
+    },
+    "placeId": "EjMxMzExLzEwNCBOb3J0aCBUZXJyYWNlLCBBZGVsYWlkZSBTQSA1MDAwLCBBdXN0cmFsaWEiOho4CjASLgoUChIJt7bnwtXOsGoRzmdypS5PbjEQaCoUChIJLf90uCzJsGoR7QywrkJuT0YSBDEzMTE",
+    "images": [
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/1.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/2.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/3.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/4.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/5.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/6.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/7.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/8.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/9.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p7/10.jpg",
+        "isCover": false
+      }
+    ]
+  },
+  {
+    "address": "124 Ross Street, Glebe, NSW 2037",
+    "state": "NSW",
+    "description": "An innovative take on the classic Victorian terrace, this home offers sleek and stylish living set over two levels. The ground floor is dedicated to vast formal and informal indoor/outdoor entertaining while the upstairs features bedroom and bathroom accommodation. Stay in and enjoy space, light and sumptuous finishes or step out to parks, walking tracks and Tramsheds.",
+    "type": "Townhouse",
+    "bed": 3,
+    "bath": 2,
+    "carpark": 2,
+    "area": 204,
+    "price": 1200000,
+    "coordinates": {
+      "lat": -33.8792828,
+      "lng": 151.1793989
+    },
+    "placeId": "Ei0xMjQgUm9zcyBTdCwgRm9yZXN0IExvZGdlIE5TVyAyMDM3LCBBdXN0cmFsaWEiMBIuChQKEgkHPlJf1q8SaxEkMc0pM_a2lRB8KhQKEgmNLAX01a8SaxHAPFafZYeUtg",
+    "images": [
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/1.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/2.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/3.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/4.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/5.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/6.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/7.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/8.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/9.jpg",
+        "isCover": false
+      },
+      {
+        "url": "https://joe-jr-estate-media-storage.s3.ap-southeast-2.amazonaws.com/property-images/p8/10.jpg",
         "isCover": false
       }
     ]

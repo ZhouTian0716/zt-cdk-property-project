@@ -17,7 +17,7 @@ export function validateAsPropertyEntry(arg: any) {
   if ((arg as PropertyEntry).description == undefined) {
     throw new MissingFieldError("description");
   }
-  if ((arg as PropertyEntry).id == undefined) {
-    throw new MissingFieldError("id");
+  if ((arg as PropertyEntry).address == undefined) {
+    throw new MissingFieldError("type");
   }
 }

@@ -6,7 +6,9 @@ import { createRandomId, parseJSON } from "../shared/Utils";
 export async function postProperties(event: APIGatewayProxyEvent, ddbDocClient: DynamoDBDocumentClient): Promise<APIGatewayProxyResult> {
   const randomId = createRandomId();
   const item = parseJSON(event.body);
+  
   item.id = randomId;
+  item.createdAt = new Date().toISOString();
 
   validateAsPropertyEntry(item);
 
@@ -18,8 +20,8 @@ export async function postProperties(event: APIGatewayProxyEvent, ddbDocClient: 
 );
 
   return {
-    statusCode: 200,
-    body: JSON.stringify(result),
+    statusCode: result.$metadata.httpStatusCode,
+    body: JSON.stringify(item.id),
   };
 }
 
