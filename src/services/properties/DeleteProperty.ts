@@ -1,8 +1,8 @@
-import { DynamoDBClient, DeleteItemCommand } from "@aws-sdk/client-dynamodb";
+import { DynamoDBDocumentClient, DeleteCommand } from "@aws-sdk/lib-dynamodb";
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 import { hasAdminGroup } from "../shared/Utils";
 
-export async function deleteProperty(event: APIGatewayProxyEvent, ddbClient: DynamoDBClient): Promise<APIGatewayProxyResult> {
+export async function deleteProperty(event: APIGatewayProxyEvent, ddbDocClient: DynamoDBDocumentClient): Promise<APIGatewayProxyResult> {
   if (!hasAdminGroup(event)) {
     return {
       statusCode: 401,
@@ -13,10 +13,10 @@ export async function deleteProperty(event: APIGatewayProxyEvent, ddbClient: Dyn
   if (event.queryStringParameters && "id" in event.queryStringParameters) {
     const propertyId = event.queryStringParameters["id"];
 
-    await ddbClient.send(
-      new DeleteItemCommand({
+    await ddbDocClient.send(
+      new DeleteCommand({
         TableName: process.env.TABLE_NAME,
-        Key: { id: { S: propertyId } },
+        Key: { id: propertyId },
       })
     );
     return {

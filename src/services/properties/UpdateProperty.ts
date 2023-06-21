@@ -1,7 +1,7 @@
-import { DynamoDBClient, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
+import { DynamoDBDocumentClient, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 
-export async function updateProperty(event: APIGatewayProxyEvent, ddbClient: DynamoDBClient): Promise<APIGatewayProxyResult> {
+export async function updateProperty(event: APIGatewayProxyEvent, ddbDocClient: DynamoDBDocumentClient): Promise<APIGatewayProxyResult> {
   if (event.queryStringParameters && "id" in event.queryStringParameters && event.body) {
     const parsedBody = JSON.parse(event.body);
     const propertyId = event.queryStringParameters["id"];
@@ -12,10 +12,10 @@ export async function updateProperty(event: APIGatewayProxyEvent, ddbClient: Dyn
     const requestBodyValue = parsedBody[requestBodyKey];
     console.log("requestBodyValue", requestBodyValue);
 
-    const updateResult = await ddbClient.send(
-      new UpdateItemCommand({
+    const updateResult = await ddbDocClient.send(
+      new UpdateCommand({
         TableName: process.env.TABLE_NAME,
-        Key: { id: { S: propertyId } },
+        Key: { id: propertyId },
         UpdateExpression: "set #zzzNew = :new",
         ExpressionAttributeValues: { ":new": { S: requestBodyValue } },
         ExpressionAttributeNames: { "#zzzNew": requestBodyKey },
@@ -23,9 +23,9 @@ export async function updateProperty(event: APIGatewayProxyEvent, ddbClient: Dyn
       })
     );
     return {
-        statusCode: 204,
-        body: JSON.stringify(updateResult.Attributes),
-    }
+      statusCode: 204,
+      body: JSON.stringify(updateResult.Attributes),
+    };
   }
   return {
     statusCode: 400,

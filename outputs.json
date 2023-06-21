@@ -1,0 +1,18 @@
+{
+  "DataStack": {
+    "ExportsOutputFnGetAttPropertiesTable324F3970Arn6D8BC4A3": "arn:aws:dynamodb:ap-southeast-2:242124526739:table/PropertiesTable-02c779044ee4",
+    "ExportsOutputRefPropertiesTable324F39707A8F800F": "PropertiesTable-02c779044ee4"
+  },
+  "AuthStack": {
+    "PropertyIdentityPoolId": "ap-southeast-2:37136033-01bf-475b-9dce-42b4ba221efe",
+    "CRMUserPoolId": "ap-southeast-2_eGOzIXMlU",
+    "CRMUserPoolClientId": "2trvpud071bup9m6daffq73iql",
+    "ExportsOutputFnGetAttCRMUserPool96D2B7E0ArnD744486A": "arn:aws:cognito-idp:ap-southeast-2:242124526739:userpool/ap-southeast-2_eGOzIXMlU"
+  },
+  "LambdaStack": {
+    "ExportsOutputFnGetAttPropertiesLambdaC98CA048Arn162C218B": "arn:aws:lambda:ap-southeast-2:242124526739:function:LambdaStack-PropertiesLambdaC98CA048-RbgWmL9qE38u"
+  },
+  "ApiStack": {
+    "PropertiesApiEndpoint1C511BBD": "https://2uglo6gd70.execute-api.ap-southeast-2.amazonaws.com/prod/"
+  }
+}

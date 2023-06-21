@@ -5,6 +5,7 @@ import { fromCognitoIdentityPool } from "@aws-sdk/credential-providers";
 
 const awsRegion = "ap-southeast-2";
 
+// authenticationFlowType: 'USER_SRP_AUTH' | 'USER_PASSWORD_AUTH' | 'CUSTOM_AUTH'
 Amplify.configure({
   Auth: {
     region: awsRegion,

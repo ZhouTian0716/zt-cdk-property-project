@@ -1,5 +1,5 @@
 import { Stack, StackProps } from "aws-cdk-lib";
-import { AuthorizationType, CognitoUserPoolsAuthorizer, LambdaIntegration, MethodOptions, RestApi } from "aws-cdk-lib/aws-apigateway";
+import { AuthorizationType, CognitoUserPoolsAuthorizer, Cors, LambdaIntegration, MethodOptions, ResourceOptions, RestApi } from "aws-cdk-lib/aws-apigateway";
 import { IUserPool } from "aws-cdk-lib/aws-cognito";
 import { Construct } from "constructs";
 
@@ -24,14 +24,21 @@ export class ApiStack extends Stack {
     const optionsWithAuth: MethodOptions = {
       authorizationType: AuthorizationType.COGNITO,
       authorizer: {
-          authorizerId: authorizer.authorizerId
-      }
-  }
+        authorizerId: authorizer.authorizerId,
+      },
+    };
+
+    const optionsWithCors: ResourceOptions = {
+      defaultCorsPreflightOptions: {
+        allowOrigins: Cors.ALL_ORIGINS,
+        allowMethods: Cors.ALL_METHODS,
+      },
+    };
 
     // ZT-NOTE: "/properties" here
-    const propertiesResource = api.root.addResource("properties");
-    propertiesResource.addMethod("GET", props.propertiesLambdaIntegration, optionsWithAuth);
-    propertiesResource.addMethod("POST", props.propertiesLambdaIntegration, optionsWithAuth);
+    const propertiesResource = api.root.addResource("properties", optionsWithCors);
+    propertiesResource.addMethod("GET", props.propertiesLambdaIntegration);
+    propertiesResource.addMethod("POST", props.propertiesLambdaIntegration);
     propertiesResource.addMethod("PUT", props.propertiesLambdaIntegration, optionsWithAuth);
     propertiesResource.addMethod("DELETE", props.propertiesLambdaIntegration, optionsWithAuth);
   }

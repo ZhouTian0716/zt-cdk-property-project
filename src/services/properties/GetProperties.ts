@@ -1,25 +1,22 @@
-import { DynamoDBClient, GetItemCommand, ScanCommand } from "@aws-sdk/client-dynamodb";
-import { unmarshall } from "@aws-sdk/util-dynamodb";
+import { DynamoDBDocumentClient, GetCommand, ScanCommand } from "@aws-sdk/lib-dynamodb";
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 
-export async function getProperties(event: APIGatewayProxyEvent, ddbClient: DynamoDBClient): Promise<APIGatewayProxyResult> {
+export async function getProperties(event: APIGatewayProxyEvent, ddbDocClient: DynamoDBDocumentClient): Promise<APIGatewayProxyResult> {
   if (event.queryStringParameters) {
     if ("id" in event.queryStringParameters) {
       const propertyId = event.queryStringParameters["id"];
-      const getItemResponse = await ddbClient.send(
-        new GetItemCommand({
+      const getItemResponse = await ddbDocClient.send(
+        new GetCommand({
           TableName: process.env.TABLE_NAME,
           Key: {
-            id: { S: propertyId },
+            id: propertyId,
           },
         })
       );
       if (getItemResponse.Item) {
-        const unmashalledItem = unmarshall(getItemResponse.Item);
-        console.log(unmashalledItem);
         return {
           statusCode: 200,
-          body: JSON.stringify(unmashalledItem),
+          body: JSON.stringify(getItemResponse.Item),
         };
       } else {
         return {
@@ -35,15 +32,14 @@ export async function getProperties(event: APIGatewayProxyEvent, ddbClient: Dyna
     }
   }
 
-  const result = await ddbClient.send(
+  // Dangerous! This will return all items in the table, costing you money!
+  const result = await ddbDocClient.send(
     new ScanCommand({
       TableName: process.env.TABLE_NAME,
     })
   );
-  const unmashalledItems = result.Items?.map((item) => unmarshall(item));
-  console.log(unmashalledItems);
   return {
     statusCode: 200,
-    body: JSON.stringify(unmashalledItems),
+    body: JSON.stringify(result),
   };
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-launcher": "ts-node test/launcher.ts",
-    "test-auth": "ts-node test/auth.test.ts"
+    "test-auth": "ts-node test/auth.test.ts",
+    "deploy": "cdk deploy --all --outputs-file outputs.json"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +32,7 @@
     "@aws-sdk/util-dynamodb": "^3.354.0",
     "@types/uuid": "^9.0.2",
     "aws-amplify": "^5.2.7",
+    "dynamodb-data-types": "^4.0.1",
     "uuid": "^9.0.0"
   }
 }
